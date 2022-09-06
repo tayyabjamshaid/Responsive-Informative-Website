@@ -1,0 +1,231 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    
+}
+ul{
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+ul .logo{
+    display: flex;
+    width: 10%;
+    align-items: center;
+}
+ul .logo img{
+    width: 70%;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+nav .search{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    margin-right: 10vh;
+
+}
+nav .search input{
+    border-radius: 6px;
+    height: 23px;
+}
+ul li {
+    padding: 10px 24px;
+    list-style: none;
+}
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-size:20px;
+}
+ul li a:hover{
+    color: gray ;
+    text-decoration: none;
+}
+.background{
+   background: rgba(0, 0, 0, 0.7) url('../img/download.jpg'); 
+   background-size: cover;
+   background-blend-mode: darken;
+
+
+}
+.burger-resp{
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 15px;
+    cursor: pointer;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin :3px 3px;
+}
+.firstSection{
+    height: 100vh;
+   
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 75%;
+}
+.firstHalf{
+    width: 70%;
+}
+.secondHalf {
+    width: 30%;
+}
+.secondHalf img{
+        width: 89%;
+        display: block;
+            border-radius: 50%;
+            margin: auto;
+                        border: 5px solid black;
+
+}
+
+.text-size-big{
+    font-size: 23px;
+font-weight: bolder;
+}
+.text-size-small{
+    font-weight: 15px;
+}
+.btn{
+    margin: 6px 3px;
+    border: 2px solid white;
+        padding: 5px 5px;
+        border-radius: 5px;
+        font-size: 17px;
+        background: none;
+        color: white;
+        cursor: pointer;
+}
+.btn-sm{
+    padding: 6px 10px;
+    vertical-align: center;
+}
+.section{
+    display: flex;
+        align-items: center;
+        max-width: 80%;
+        margin: 20px auto;
+}
+.section .paras{
+    padding: 0px 55px;
+}
+.changeDirection{
+    flex-direction: row-reverse;
+}
+.imgPad{
+    padding-left: 47px;
+}
+.thumbnail img{
+    width: 196px;
+        height: 174px;
+        border: 2px solid black;
+            border-radius: 17px
+    
+}
+.contact{
+    background-color: #f6f5f4 ;
+    height: 548px;
+}
+.text-center{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+.form{
+    max-width: 65%;
+    margin: auto;
+}
+.form-input{
+        width: 100%;
+            border: 2px solid black;
+            font-size: 20px;
+            border-radius: 8px;
+            margin:7px auto;
+            padding: 5px;
+        }
+.form-btn{
+        padding: 6px 12px;
+            border-radius: 6px;
+            border: 2px black solid;
+           
+            font-weight: bold;
+}
+
+.text-footer{
+    text-align: center;
+    padding: 30px 0px;
+    color: white;
+}
+@media only screen and (max-width:1140px){
+    nav{
+        /* height: 270px; */
+        flex-direction: column;
+        align-items: center;
+        /* transition: all 0.3s ease-out; */
+    }
+    ul{
+        flex-direction: column;
+
+    }
+    .search{
+        flex-direction: column;
+
+    }
+    .firstSection{
+        padding-top: 5%;
+        height: 50vh;
+        text-align: center;
+    }
+    nav .search {
+        margin-right: 0px;
+    }
+    nav .search input{
+        width: 100%;
+    }  
+    .box-main{
+    flex-direction: column-reverse;
+    max-width: 100%;
+  }
+    .burger-resp{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 72px;
+    }
+  .showHide-resp{
+    opacity: 0;
+  }
+
+ .section{
+    flex-direction: column-reverse;
+    max-width: 100%;
+ }
+ .paras {
+     padding: 0px;
+ }
+.paras .secondTag{
+    text-align: center;
+}
+
+}
